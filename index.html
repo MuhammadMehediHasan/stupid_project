@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ban">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>OrdhekDeen</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+
+
+  <link rel="icon" href="./20221205130632.png" type="image/svg">
+
+  <link rel="stylesheet" href="./ordhekdeen-frontend.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+
+  <div class="od-container-main">
+    <header>
+      <div id="od_header">
+        <div class="od-w-100">
+          <div class="od-container">
+            <div class="od-row od-align-items-center">
+              <div class="od-col-4 od-col-md-3 md-order-2">
+                <div class="od-site-logo">
+                  <a href="https://ordhekdeen.com/"><img src="./20221205130621.svg"></a>
+                </div>
+              </div>
+              <div class="od-col-4 od-col-md-6 md-order-1">
+                <div class="od-mobile-menu-trigger">
+                  <a href="https://ordhekdeen.com/#"><i class="fa fa-bars"></i></a>
+                </div>
+
+              </div>
+              <div class="od-col-4 od-col-md-3 md-order-3">
+                <div class="od-header-right-container">
+                  <div class="od-menu-lists od-display-flex od-align-items-center od-justify-content-end">
+
+                    <div class="od-menu-list-item">
+                      <div class="od-my-account-container">
+                        <a class="od-button signin-button" href="https://ordhekdeen.com/login">লগইন</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="od-content-main">
+      <section class="od-home-top-bg">
+        <div class="od-top-bg-content-container">
+          <div class="od-top-bg-content">
+
+            <div class="od-top-bg-text">
+              <h1>পছন্দের দীনদার <span>মেয়ের তালিকা</span></h1>
+              <h2>বি.দ্র: তালিকাটি সম্পূর্ণ নিজের ভালো লাগার ওপর তৈরি</h2>
+
+            </div>
+
+
+          </div>
+          <div class="btn">
+            <button class="od-button">Gallery ওপেন করুন</button>
+          </div>
+
+
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <video>
+    <source src="./video.mp4" type="video/mp4" />
+  </video>
+
+  <script>
+    var elem = document.querySelector("video");
+    var div = document.querySelector(".od-container-main");
+    document.querySelector("button").addEventListener("click", () => {
+      elem.style.display = "block";
+
+      div.style.display = "none";
+      openFullscreen();
+      elem.play();
+      elem.controls = false;
+    });
+
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) {
+        /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+
+      //   openFullscreen()
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+video {
+  cursor: none;
+  display: none;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.od-button {
+    max-width: 300px;
+}
